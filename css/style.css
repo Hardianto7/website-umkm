@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  color: #2f2118;
-  background: #f6f0e8;
+  color: #304238;
+  background: #f5f1e8;
   font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .page {
@@ -11,42 +16,621 @@ body {
   padding: 32px 20px;
 }
 
+.site-header {
+  padding: 18px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #d5dfd0;
+}
+
+.nav {
+  max-width: 920px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+/* Brand */
+
+.brand {
+  display: inline-block;
+  margin: 0;
+
+  color: #526b55;
+  font-size: 20px;
+  font-weight: 800;
+
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand:hover {
+  color: #6f8972;
+}
+
+/* Menu */
+
+.nav ul {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0;
+  margin: 0;
+
+  background: transparent;
+  border: 0;
+
+  list-style: none;
+}
+
+.nav li {
+  margin: 0;
+}
+
+/* Link menu */
+
+.nav a {
+  display: inline-block;
+
+  padding: 8px 12px;
+
+  color: #52605a;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  color: #526b55;
+  background: #f0f5ed;
+}
+
+/* Menu aktif */
+
+.nav a[aria-current="page"] {
+  color: #ffffff;
+  background: #6f8972;
+
+  font-weight: 700;
+}
+
 .hero {
   padding: 36px;
-  color: white;
-  background: #610b0b;
+
+  color: #304238;
+  background: #c9d8c0;
+
   border-radius: 24px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: #304238;
+}
+
+.hero p {
+  margin-top: 0;
 }
 
 .eyebrow {
   margin: 0 0 8px;
+
+  color: #526b55;
+
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.products {
-  padding-left: 1.2rem;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+.hero img {
+  display: block;
+
+  width: 100%;
+  max-width: 650px;
+  height: 360px;
+
+  margin: 20px auto 0;
+
+  object-fit: cover;
+
+  border-radius: 18px;
+}
+
+/* =========================
+FIGURE
+========================= */
+
+figure {
+  margin: 0 0 24px;
+}
+
+figcaption {
+  margin-top: 8px;
+
+  color: #66736a;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================
+GALERI
+========================= */
+
+.gallery-list {
+  margin-top: 20px;
+}
+
+.media-card {
+  max-width: 600px;
+
+  margin: 0 auto 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dfd0;
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(48, 66, 56, 0.08);
+}
+
+.media-card img {
+  display: block;
+
+  width: 100%;
+  height: 280px;
+
+  object-fit: cover;
+}
+
+.media-card figcaption {
+  padding: 14px 18px;
+  margin: 0;
+}
+
+/* =========================
+PRODUK
+========================= */
+
+.product-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 24px;
+
+  margin-top: 20px;
+}
+
+.product-card {
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dfd0;
+  border-radius: 18px;
+
+  box-shadow: 0 4px 12px rgba(48, 66, 56, 0.08);
+}
+
+.product-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  color: #526b55;
+
+  font-size: 20px;
+}
+
+.product-card p {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  line-height: 1.6;
+}
+
+/* =========================
+HARGA
+========================= */
+
+.price {
+  margin-bottom: 0 !important;
+
+  color: #526b55;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* =========================
+TABEL
+========================= */
+
+table {
+  width: 100%;
+
+  margin-top: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dfd0;
+
+  border-collapse: collapse;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+caption {
+  margin-bottom: 8px;
+
+  color: #526b55;
+
+  font-weight: 700;
+
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px 14px;
+
+  text-align: left;
+
+  border: 1px solid #d5dfd0;
+}
+
+thead th {
+  color: #ffffff;
+
+  background: #6f8972;
+}
+
+tbody th {
+  color: #304238;
+
+  background: #f5f1e8;
+}
+
+/* =========================
+SECTION
+========================= */
+
+main section {
+  margin-bottom: 40px;
+}
+
+main section:last-child {
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: #526b55;
+}
+
+/* =========================
+KATEGORI PRODUK
+========================= */
+
+main ul {
+  padding: 20px 20px 20px 40px;
+
+  margin: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dfd0;
+  border-radius: 16px;
+}
+
+main li {
+  margin-bottom: 8px;
+}
+
+main li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+AUDIO
+========================= */
+
+audio {
+  display: block;
+
+  width: 100%;
+  max-width: 500px;
+}
+
+/* =========================
+BUTTON PROMO
+========================= */
 
 button {
   padding: 12px 18px;
-  margin-bottom: 30px;
-  color: #2f2118;
+
+  margin-bottom: 10px;
+
+  color: #ffffff;
+
   font-weight: 700;
+
   cursor: pointer;
-  background: #e4dcdc;
+
+  background: #6f8972;
+
   border: 0;
+
   border-radius: 999px;
 }
 
-.skip-link { position: absolute; left: -9999px; padding: 8px 12px; color: white; background: #2f2118; }
-.skip-link:focus { top: 8px; left: 8px; }
-.site-header { padding: 16px 20px; background: white; border-bottom: 1px solid #dccbbc; }
-.nav { max-width: 920px; margin: 0 auto; }
-.brand { display: inline-block; margin-bottom: 8px; color: #4b2715; font-weight: 800; text-decoration: none; }
-.nav ul { padding: 0; margin: 0; list-style: none; }
-.nav li { display: inline-block; margin-right: 12px; }
-.nav a[aria-current="page"] { font-weight: 800; }
+button:hover {
+  background: #5d7561;
+}
+
+/* =========================
+INFORMASI KEDAI
+========================= */
+
+.info-section {
+  margin-top: 20px;
+}
+
+.info-section h2 {
+  margin-bottom: 20px;
+}
+
+.info-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.info-card {
+  padding: 24px 20px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dfd0;
+  border-radius: 18px;
+
+  box-shadow: 0 4px 12px rgba(48, 66, 56, 0.07);
+}
+
+.info-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  margin: 0 auto 14px;
+
+  background: #c9d8c0;
+
+  border-radius: 50%;
+
+  font-size: 21px;
+}
+
+.info-card h3 {
+  margin: 0 0 8px;
+
+  color: #526b55;
+
+  font-size: 18px;
+}
+
+.info-card p {
+  margin: 0;
+
+  color: #66736a;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+LINK KONTAK
+========================= */
+
+.contact-link {
+  margin-top: 14px !important;
+}
+
+.contact-link a {
+  display: inline-block;
+
+  padding: 9px 16px;
+
+  color: #ffffff;
+
+  background: #6f8972;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.contact-link a:hover {
+  background: #5d7561;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+SKIP LINK
+========================= */
+
+.skip-link {
+  position: absolute;
+
+  left: -9999px;
+
+  padding: 8px 12px;
+
+  color: #ffffff;
+
+  background: #304238;
+
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  top: 8px;
+  left: 8px;
+}
+
+/* =========================
+FOCUS
+========================= */
+
 a:focus-visible,
-button:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
-.site-footer { padding: 24px 20px; color: white; text-align: center; background: #2f2118; }
+button:focus-visible {
+  outline: 3px solid #9caf98;
+
+  outline-offset: 3px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+.site-footer {
+  padding: 24px 20px;
+
+  color: #f5f1e8;
+
+  text-align: center;
+
+  background: #304238;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+  .page {
+    padding: 20px 15px;
+  }
+
+  /* Header HP */
+
+  .nav {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+    
+  }
+
+  .nav ul {
+    flex-wrap: wrap;
+
+    gap: 5px;
+    
+  }
+
+  .nav a {
+    padding: 7px 10px;
+
+    font-size: 13px;
+  
+  }
+
+  /* Hero */
+
+  .hero {
+    padding: 24px;
+
+   border-radius: 16px;
+
+  }
+
+  .hero img {
+    width: 100%;
+    height: 240px;
+  }
+
+  /* Produk */
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    padding: 20px;
+  }
+
+  /* Galeri */
+
+  .media-card {
+    max-width: 100%;
+  }
+
+  .media-card img {
+    height: 240px;
+  }
+
+  /* Informasi kedai */
+
+  .info-list {
+    grid-template-columns: 1fr;
+
+
+    gap: 16px;
+
+
+  }
+
+  .info-card {
+    padding: 20px;
+  }
+
+  /* Tabel */
+
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+}
