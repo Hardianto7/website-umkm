@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Kopi Kenangan</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="site-header">
+
+      <a class="skip-link" href="#konten">
+        Lewati ke konten utama
+      </a>
+
+      <nav class="nav" aria-label="Navigasi utama">
+
+        <a class="brand" href="index.html">
+          Kopi Kenangan
+        </a>
+
+        <ul>
+          <li>
+            <a href="index.html">Beranda</a>
+          </li>
+
+          <li>
+            <a href="tentang.html">Tentang Kami</a>
+          </li>
+
+          <li>
+            <a href="galeri.html">Galeri</a>
+          </li>
+
+          <li>
+            <a href="produk.html">Produk</a>
+          </li>
+
+          <li>
+            <a href="kontak.html" aria-current="page">
+              Kontak
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+
+    <main id="konten">
+
+      <section class="hero">
+
+        <p class="eyebrow">
+          Hubungi Kami
+        </p>
+
+        <h1>
+          Pesan Kopi Kenangan
+        </h1>
+
+        <p>
+          Silakan isi form berikut untuk melakukan pemesanan
+          atau menyampaikan pertanyaan kepada Kopi Kenangan.
+        </p>
+
+      </section>
+
+
+      <section class="form-section" aria-labelledby="form-pesanan">
+
+        <h2 id="form-pesanan">
+          Form Pemesanan
+        </h2>
+
+        <p>
+          Isi data dengan lengkap agar kami dapat memproses
+          pesanan dengan lebih mudah.
+        </p>
+
+
+        <form id="form-kontak">
+
+          <!-- Nama -->
+          <div class="form-group">
+
+            <label for="nama">
+              Nama Lengkap
+            </label>
+
+            <input type="text" id="nama" name="nama" autocomplete="name" minlength="3" required>
+
+          </div>
+
+
+          <!-- Email -->
+          <div class="form-group">
+
+            <label for="email">
+              Alamat Email
+            </label>
+
+            <input type="email" id="email" name="email" autocomplete="email" required>
+
+          </div>
+
+
+          <!-- Produk -->
+          <div class="form-group">
+
+            <label for="paket">
+              Pilih Produk
+            </label>
+
+            <select id="paket" name="paket" required>
+
+              <option value="">
+                -- Pilih produk --
+              </option>
+
+              <option value="Kopi Tubruk Signature">
+                Kopi Tubruk Signature - Rp30.000
+              </option>
+
+              <option value="Matchalate">
+                Matchalate - Rp40.000
+              </option>
+
+              <option value="Kopi Mantan">
+                Kopi Mantan - Rp40.000
+              </option>
+
+              <option value="Red Velvet">
+                Red Velvet - Rp40.000
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Topik -->
+          <div class="form-group">
+
+            <label for="topik">
+              Topik
+            </label>
+
+            <select id="topik" name="topik" required>
+
+              <option value="">
+                -- Pilih topik --
+              </option>
+
+              <option value="Pemesanan">
+                Pemesanan
+              </option>
+
+              <option value="Pertanyaan">
+                Pertanyaan
+              </option>
+
+              <option value="Informasi Produk">
+                Informasi Produk
+              </option>
+
+              <option value="Lainnya">
+                Lainnya
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Radio -->
+          <div class="form-group">
+
+            <fieldset>
+
+              <legend>
+                Pilih Jenis Pesanan
+              </legend>
+
+              <label>
+                <input type="radio" name="jenis-pesanan" value="Minum di Tempat" required>
+                Minum di Tempat
+              </label>
+
+              <label>
+                <input type="radio" name="jenis-pesanan" value="Bawa Pulang">
+                Bawa Pulang
+              </label>
+
+            </fieldset>
+
+          </div>
+
+
+          <!-- Checkbox -->
+          <div class="form-group">
+
+            <label>
+
+              <input type="checkbox" name="persetujuan" required>
+
+              Saya menyetujui data yang saya isi sudah benar.
+
+            </label>
+
+          </div>
+
+
+          <!-- Pesan -->
+          <div class="form-group">
+
+            <label for="pesan">
+              Pesan
+            </label>
+
+            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan kamu..." required></textarea>
+
+          </div>
+
+
+          <!-- Tombol -->
+          <button type="submit">
+            Kirim Pesan
+          </button>
+
+        </form>
+
+      </section>
+
+
+      <!-- Hasil Form -->
+      <section class="form-section" aria-labelledby="hasil-form">
+
+        <h2 id="hasil-form">
+          Hasil Form
+        </h2>
+
+        <pre id="preview-form" aria-live="polite"></pre>
+
+      </section>
+
+
+      <!-- Informasi Kontak -->
+      <section class="contact-info" aria-labelledby="info-kontak">
+
+        <h2 id="info-kontak">
+          Kontak Kopi Kenangan
+        </h2>
+
+        <p>
+          Jika ingin bertanya terlebih dahulu, kamu juga
+          dapat menghubungi kami melalui WhatsApp.
+        </p>
+
+        <p>
+          <a class="contact-link" href="https://wa.me/6281234567890">
+            Hubungi Kopi Kenangan melalui WhatsApp
+          </a>
+        </p>
+
+      </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+      <p>
+        &copy; 2026 Kopi Kenangan. Semua hak dilindungi.
+      </p>
+
+    </footer>
+
+  </div>
+
+
+  <script src="js/form.js"></script>
+
+</body>
+
+</html>

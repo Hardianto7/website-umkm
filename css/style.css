@@ -634,3 +634,178 @@ RESPONSIVE
     padding: 10px;
   }
 }
+
+/* =========================
+   P04 - FORM HTML
+   ========================= */
+
+.form-section {
+  margin-top: 20px;
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dfd0;
+  border-radius: 18px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #304238;
+  font-weight: 700;
+}
+
+
+/* =========================
+   INPUT FORM
+   ========================= */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 11px 12px;
+
+  color: #304238;
+  background: #ffffff;
+
+  border: 1px solid #b9c7b4;
+  border-radius: 8px;
+
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #66736a;
+}
+
+
+/* =========================
+   FIELDSET
+   ========================= */
+
+fieldset {
+  margin: 24px 0;
+  padding: 18px;
+
+  border: 1px solid #d5dfd0;
+  border-radius: 12px;
+}
+
+legend {
+  padding: 0 6px;
+
+  color: #526b55;
+  font-weight: 700;
+}
+
+
+/* =========================
+   RADIO & CHECKBOX
+   ========================= */
+
+.radio-group label,
+.agreement label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-weight: 400;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+
+/* =========================
+   ACCESSIBILITY - FOCUS
+   ========================= */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #9caf98;
+  outline-offset: 3px;
+}
+
+
+/* =========================
+   TOMBOL FORM
+   ========================= */
+
+.form-section button[type="submit"] {
+  padding: 12px 20px;
+
+  color: #ffffff;
+  background: #6f8972;
+
+  border: 0;
+  border-radius: 999px;
+
+  font: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.form-section button[type="submit"]:hover {
+  background: #5d7561;
+}
+
+
+/* =========================
+   INFORMASI KONTAK
+   ========================= */
+
+.contact-info {
+  margin-top: 24px;
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5dfd0;
+  border-radius: 18px;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+}
+
+.contact-info .contact-link {
+  display: inline-block;
+
+  padding: 9px 16px;
+
+  color: #ffffff;
+  background: #6f8972;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-info .contact-link:hover {
+  background: #5d7561;
+}
