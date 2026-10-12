@@ -1,239 +1,156 @@
 <!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beranda - Kopi Kenangan</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Beranda - Kopi Kenangan</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <!-- Skip Link -->
+    <a class="skip-link" href="#konten"> Lewati ke konten utama </a>
 
-<body>
+    <!-- Header & Navigasi -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Navigasi utama">
+        <a class="brand" href="index.html"> Kopi Kenangan </a>
 
-  <!-- Skip Link -->
-  <a class="skip-link" href="#konten">
-    Lewati ke konten utama
-  </a>
+        <ul>
+          <li>
+            <a href="index.html" aria-current="page"> Beranda </a>
+          </li>
 
-  <!-- Header & Navigasi -->
-  <header class="site-header">
-    <nav class="nav" aria-label="Navigasi utama">
+          <li>
+            <a href="tentang.html"> Tentang Kami </a>
+          </li>
 
-      <a class="brand" href="index.html">
-        Kopi Kenangan
-      </a>
+          <li>
+            <a href="galeri.html"> Galeri </a>
+          </li>
 
-      <ul>
-        <li>
-          <a href="index.html" aria-current="page">
-            Beranda
-          </a>
-        </li>
+          <li>
+            <a href="produk.html"> Produk </a>
+          </li>
 
-        <li>
-          <a href="tentang.html">
-            Tentang Kami
-          </a>
-        </li>
+          <li>
+            <a href="kontak.html"> Kontak </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <li>
-          <a href="galeri.html">
-            Galeri
-          </a>
-        </li>
+    <!-- Konten Utama -->
+    <main id="konten" class="page">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">UMKM Jamaica</p>
+          <h1 id="hero-title">Kopi Nusa</h1>
+          <p>
+            Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.
+          </p>
+          <button id="promoButton" type="button">Lihat promo hari ini</button>
+        </div>
+        <img
+          class="hero-image"
+          src="assets/images/kopi kenangan.jpg"
+          alt="Etalase Kopi Kenangan berisi kemasan kopi lokal"
+        />
+      </section>
 
-        <li>
-          <a href="produk.html">
-            Produk
-          </a>
-        </li>
+      <!-- Produk Unggulan -->
+      <section aria-labelledby="produk-title">
+        <h2 id="produk-title">Produk Unggulan</h2>
 
-        <li>
-          <a href="kontak.html">
-            Kontak
-          </a>
-        </li>
-      </ul>
+        <div class="product-list">
+          <!-- Produk 1 -->
+          <article class="product-card">
+            <img
+              src="assets/images/Mantan.jpg"
+              alt="Kopi Mantan dengan aroma kopi klasik"
+            />
 
-    </nav>
-  </header>
+            <div class="product-info">
+              <h3>Kopi Mantan</h3>
 
-  <!-- Konten Utama -->
-  <main id="konten" class="page">
+              <p>Rasa klasik dengan aroma kuat untuk teman galaumu.</p>
 
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="hero-title">
+              <p class="price">Rp30.000</p>
+            </div>
+          </article>
 
-      <p class="eyebrow">
-        UMKM Pekalongan
-      </p>
+          <!-- Produk 2 -->
+          <article class="product-card">
+            <img
+              src="assets/images/download.jpg"
+              alt="Cold Brew Aren dengan es dan gula aren"
+            />
 
-      <h1 id="hero-title">
-        Kopi Kenangan
-      </h1>
+            <div class="product-info">
+              <h3>Cold Brew Aren</h3>
 
-      <p>
-        Kopi lokal pilihan cocok untuk menemani galau.
-      </p>
+              <p>Minuman kopi dingin dengan manis aren yang seimbang.</p>
 
-      <button id="promoButton" type="button">
-        Lihat promo hari ini
-      </button>
+              <p class="price">Rp22.000</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <img
-        src="assets/images/kopi kenangan.jpg"
-        alt="Etalase Kopi Kenangan berisi kemasan kopi lokal"
-      >
+      <!-- Informasi Kedai -->
+      <section aria-labelledby="info-title" class="info-section">
+        <h2 id="info-title">Informasi Kedai</h2>
 
-    </section>
+        <!-- Jam Buka -->
+        <article class="info-card">
+          <div class="info-icon">🕒</div>
 
-    <!-- Produk Unggulan -->
-    <section aria-labelledby="produk-title">
+          <h3>Jam Buka</h3>
 
-      <h2 id="produk-title">
-        Produk Unggulan
-      </h2>
-
-      <div class="product-list">
-
-        <!-- Produk 1 -->
-        <article class="product-card">
-
-          <img
-            src="assets/images/Mantan.jpg"
-            alt="Kopi Mantan dengan aroma kopi klasik"
-          >
-
-          <div class="product-info">
-
-            <h3>
-              Kopi Mantan
-            </h3>
-
-            <p>
-              Rasa klasik dengan aroma kuat untuk teman galaumu.
-            </p>
-
-            <p class="price">
-              Rp30.000
-            </p>
-
-          </div>
-
+          <p>
+            Senin - Minggu<br />
+            08.00 - 22.00 WIB
+          </p>
         </article>
 
-        <!-- Produk 2 -->
-        <article class="product-card">
+        <!-- Lokasi -->
+        <article class="info-card">
+          <div class="info-icon">📍</div>
 
-          <img
-            src="assets/images/download.jpg"
-            alt="Cold Brew Aren dengan es dan gula aren"
-          >
+          <h3>Lokasi</h3>
 
-          <div class="product-info">
-
-            <h3>
-              Cold Brew Aren
-            </h3>
-
-            <p>
-              Minuman kopi dingin dengan manis aren yang seimbang.
-            </p>
-
-            <p class="price">
-              Rp25.000
-            </p>
-
-          </div>
-
+          <p>
+            Jl. Yuhu Alamat No. 123<br />
+            Pekalongan
+          </p>
         </article>
 
-      </div>
+        <!-- Kontak -->
+        <article class="info-card">
+          <div class="info-icon">📞</div>
 
-    </section>
+          <h3>Kontak</h3>
 
-    <!-- Informasi Kedai -->
-    <section aria-labelledby="info-title" class="info-section">
+          <p class="contact-link">
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              rel="noopener"
+            >
+              Hubungi via WhatsApp
+            </a>
+          </p>
+        </article>
+      </section>
+    </main>
 
-      <h2 id="info-title">
-        Informasi Kedai
-      </h2>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>&copy; 2026 Kopi Kenangan. Data pada halaman ini bersifat dummy.</p>
+    </footer>
 
-      <!-- Jam Buka -->
-      <article class="info-card">
-
-        <div class="info-icon">
-          🕒
-        </div>
-
-        <h3>
-          Jam Buka
-        </h3>
-
-        <p>
-          Senin - Minggu<br>
-          08.00 - 22.00 WIB
-        </p>
-
-      </article>
-
-      <!-- Lokasi -->
-      <article class="info-card">
-
-        <div class="info-icon">
-          📍
-        </div>
-
-        <h3>
-          Lokasi
-        </h3>
-
-        <p>
-          Jl. Yuhu Alamat No. 123<br>
-          Pekalongan
-        </p>
-
-      </article>
-
-      <!-- Kontak -->
-      <article class="info-card">
-
-        <div class="info-icon">
-          📞
-        </div>
-
-        <h3>
-          Kontak
-        </h3>
-
-        <p class="contact-link">
-          <a
-            href="https://wa.me/6281234567890"
-            target="_blank"
-            rel="noopener"
-          >
-            Hubungi via WhatsApp
-          </a>
-        </p>
-
-      </article>
-
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-
-    <p>
-      &copy; 2026 Kopi Kenangan.
-      Data pada halaman ini bersifat dummy.
-    </p>
-
-  </footer>
-
-  <!-- JavaScript -->
-  <script src="js/script.js"></script>
-
-</body>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
