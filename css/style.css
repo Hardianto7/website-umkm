@@ -1,3 +1,4 @@
+
 :root {
   --color-primary: #6f3b1f;
   --color-primary-strong: #4b2715;
@@ -20,7 +21,7 @@
   --shadow-card: 0 0.5rem 1.5rem rgb(47 33 24 / 0.1);
 }
 
-
+/* Dasar */
 *,
 *::before,
 *::after {
@@ -58,6 +59,7 @@ a:hover {
   outline-offset: 3px;
 }
 
+/* Skip link */
 .skip-link {
   position: absolute;
   top: -5rem;
@@ -71,6 +73,7 @@ a:hover {
   top: var(--space-3);
 }
 
+/* Header dan footer */
 .site-header,
 .site-footer {
   padding: var(--space-3) var(--space-4);
@@ -86,30 +89,74 @@ a:hover {
   border-bottom: 0;
 }
 
+/* Navbar */
 .nav,
 .page {
   width: min(100% - 2rem, 60rem);
   margin-inline: auto;
 }
 
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-3);
+}
+
 .brand {
   display: inline-block;
-  margin-bottom: var(--space-2);
+  margin-bottom: 0;
   color: var(--color-text);
   font-weight: 800;
   text-decoration: none;
 }
 
+/* Tombol hamburger */
+.nav-toggle {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  color: var(--color-primary-strong);
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.nav-toggle:hover {
+  color: var(--color-surface);
+  background: var(--color-primary-strong);
+}
+
+.menu-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+/* Daftar navigasi mobile */
 .nav ul {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: var(--space-2);
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav ul.is-open {
+  display: flex;
 }
 
 .nav li {
-  display: inline-block;
-  margin: 0 var(--space-2) var(--space-1) 0;
+  margin: 0;
+}
+
+.nav ul a {
+  display: block;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
 }
 
 .nav a[aria-current="page"] {
@@ -121,31 +168,12 @@ a:hover {
   border-radius: var(--radius-sm);
 }
 
-.nav {
+/* Kartu produk */
+.product-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  align-items: flex-start;
 }
-.brand {
-  display: inline-block;
-  margin-bottom: 0;
-  color: var(--color-text);
-  font-weight: 800;
-  text-decoration: none;
-}
-.nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.nav li { margin: 0; }
 
-.product-card { display: flex; flex-direction: column; }
 .product-badge {
   align-self: flex-start;
   padding: 0.25rem var(--space-2);
@@ -155,27 +183,37 @@ a:hover {
   background: #fef3c7;
   border-radius: 999px;
 }
+
 .card-actions {
   display: flex;
-  gap: var(--space-2);   
+  gap: var(--space-2);
   align-items: center;
   flex-wrap: wrap;
   margin-top: auto;
 }
 
+/* Hero */
 .hero {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-4);
   align-items: center;
+  padding: var(--space-5);
+  color: var(--color-surface);
+  background: var(--color-primary);
+  border-radius: var(--radius-md);
 }
 
 .hero:not(:has(.hero-image)) {
   grid-template-columns: 1fr;
 }
 
-.hero-image { width: 100%; border-radius: var(--radius-md); }
+.hero-image {
+  width: 100%;
+  border-radius: var(--radius-md);
+}
 
+/* Grid produk dan galeri */
 .product-grid,
 .gallery-grid {
   display: grid;
@@ -183,15 +221,9 @@ a:hover {
   gap: var(--space-3);
 }
 
+/* Konten halaman */
 .page {
   padding-block: var(--space-5);
-}
-
-.hero {
-  padding: var(--space-5);
-  color: var(--color-surface);
-  background: var(--color-primary);
-  border-radius: var(--radius-md);
 }
 
 h1,
@@ -221,6 +253,7 @@ li {
   color: #fef3c7;
 }
 
+/* Harga dan tombol */
 .price {
   color: var(--color-primary-strong);
   font-weight: 800;
@@ -256,7 +289,7 @@ button:hover {
   background: #fde68a;
 }
 
-
+/* Kartu, tabel, dan form */
 .product-card,
 .media-card,
 table,
@@ -301,6 +334,7 @@ th {
   background: var(--color-surface-soft);
 }
 
+/* Tabel responsif */
 .table-scroll {
   max-width: 100%;
   overflow-x: auto;
@@ -315,6 +349,7 @@ th {
   min-width: 40rem;
 }
 
+/* Form kontak */
 .field {
   margin-bottom: var(--space-3);
 }
@@ -362,7 +397,6 @@ audio {
   border-radius: var(--radius-sm);
 }
 
-
 .field input:invalid,
 .field select:invalid,
 .field textarea:invalid {
@@ -385,19 +419,33 @@ form button[type="submit"] {
   margin-top: var(--space-2);
 }
 
-/* Responsive */
-
+/* Responsive mulai 42rem */
 @media (min-width: 42rem) {
-  .nav ul {
-    flex-direction: row;
-  }
-
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+/* Responsive mulai 48rem */
 @media (min-width: 48rem) {
+  .nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav ul,
+  .nav ul.is-open {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
   .hero {
     grid-template-columns: 1.2fr 0.8fr;
   }
@@ -407,13 +455,8 @@ form button[type="submit"] {
   }
 }
 
+/* Responsive mulai 60rem */
 @media (min-width: 60rem) {
-  .nav {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .product-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
