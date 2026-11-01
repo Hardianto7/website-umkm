@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Produk - KOPI UTOMO</title>
   <link rel="stylesheet" href="css/style.css" />
+
+  <script src="js/app.js" defer></script>
 </head>
 
 <body>
@@ -137,7 +139,7 @@
                 250 gram
               </td>
               <td>
-                Rp45.000
+                Rp30.000
               </td>
             </tr>
             <tr>
@@ -175,7 +177,21 @@
             </tr>
           </tbody>
         </table>
+
       </div>
+    </section>
+
+    <!-- Produk dari Data JavaScript -->
+    <section class="section" aria-labelledby="produk-dinamis-title">
+      <div class="section-header">
+        <p class="eyebrow">Data JavaScript</p>
+        <h2 id="produk-dinamis-title">Produk dari Data Lokal</h2>
+        <p id="produk-ringkasan">
+          Data produk akan dimuat melalui JavaScript.
+        </p>
+      </div>
+
+      <div id="produk-dinamis" class="js-product-grid"></div>
     </section>
   </main>
   <footer class="site-footer">
