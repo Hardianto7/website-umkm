@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   // Tombol promo
   const promoButton = document.querySelector("#promoButton");
